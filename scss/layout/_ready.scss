@@ -1,1 +1,70 @@
-// .ready {}
+@use "../base/variables" as *;
+
+.ready {
+    padding: 76px 0;
+    background-color: $pink;
+    position: relative;
+
+    &__cnt {
+        width: 917px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 48px;
+        color: $deep-blue;
+    }
+
+    &__btn {
+        color: $deep-blue;
+        border: 2px solid $deep-blue;
+        padding: 10px 32px;
+        border-radius: 34px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 28px;
+        transition: all 0.3s ease;
+
+        &:hover {
+            color: $white;
+            background-color: $deep-blue;
+        }
+
+        &:active {
+            transform: scale(0.95);
+        }
+    }
+
+    &__img {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .ready {
+
+        &__title {
+            font-size: 32px;
+        }
+
+        &__img {
+            width: 150px;
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .ready {
+
+        &__cnt {
+            flex-direction: column;
+            gap: 24px;
+        }
+    }
+}
