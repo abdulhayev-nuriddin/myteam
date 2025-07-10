@@ -12,7 +12,10 @@
     <link rel="shortcut icon" href="./images/favicon.svg" type="image/x-icon" />
     <link rel="stylesheet" href="./css/main.css" />
     <!-- <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" /> -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
   </head>
 
   <body>
@@ -192,13 +195,75 @@
         <img src="./images/readybgi.png" alt="ready" class="ready__img" />
         <div class="cnt ready__cnt">
           <h2 class="ready__title">Ready to get started?</h2>
-          <button class="ready__btn">contact us</button>
+          <button
+            class="ready__btn"
+            onclick="window.location.href='./html/contact.html'"
+          >
+            contact us
+          </button>
         </div>
       </section>
     </main>
 
     <footer class="footer hidden-content">
-      <div class="cnt footer__cnt"></div>
+      <div class="cnt footer__cnt">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <img src="./images/logo.svg" alt="logo" class="footer__logo" />
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">home</a>
+            <a href="./html/about.html" class="footer__link">about</a>
+          </li>
+        </ul>
+        <ul class="footer__lists">
+          <li class="footer__items">
+            <p class="footer__text">987 Hillcrest</p>
+          </li>
+          <li class="footer__items">
+            <p class="footer__text">Lane Irvine, CA</p>
+          </li>
+          <li class="footer__items">
+            <p class="footer__text">California 92714</p>
+          </li>
+          <li class="footer__items">
+            <a href="tel:+949-833-7432" class="footer__link footer__links"
+              >Call Us : 949-833-7432</a
+            >
+          </li>
+        </ul>
+        <ul class="footer__list3">
+          <li class="footer__item3">
+            <a
+              href="http://www.facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footer__link3"
+            >
+              <i class="fa-brands fa-square-facebook"></i>
+            </a>
+            <a
+              href="http://www.pinterest.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footer__link3"
+            >
+              <i class="fa-brands fa-square-pinterest"></i>
+            </a>
+            <a
+              href="http://www.x.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footer__link3"
+            >
+              <i class="fa-brands fa-square-x-twitter"></i>
+            </a>
+          </li>
+          <li class="footer__item3">
+            <p class="footer__copy">Copyright 2020. All Rights Reserved</p>
+          </li>
+        </ul>
+      </div>
     </footer>
 
     <script src="./js/main.js"></script>
