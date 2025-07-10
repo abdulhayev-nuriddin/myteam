@@ -470,4 +470,81 @@ img {
     width: auto;
     text-align: center;
   }
+}
+.stories {
+  padding: 140px 0;
+  background-color: #004047;
+  position: relative;
+}
+.stories__cnt {
+  display: grid;
+  place-items: center;
+}
+.stories__title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  color: #fff;
+  width: 932px;
+  text-align: center;
+}
+.stories__span {
+  color: #79C8C7;
+}
+.stories__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 56px;
+}
+.stories__card {
+  width: 350px;
+  text-align: center;
+  background-image: url(../../images/storiescardbgi.svg);
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+.stories__card__text {
+  color: #fff;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+}
+.stories__card__name {
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+.stories__card__username {
+  color: #79C8C7;
+}
+.stories__card__job {
+  color: #fff;
+}
+.stories__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.stories__img2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .stories__title {
+    font-size: 32px;
+    line-height: 32px;
+    width: 573px;
+  }
+  .stories__content {
+    flex-direction: column;
+    gap: 48px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .stories__title {
+    font-size: 32px;
+    width: 327px;
+  }
 }/*# sourceMappingURL=main.css.map */

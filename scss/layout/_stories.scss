@@ -1,1 +1,98 @@
-// .stories {}
+@use "../base/variables" as *;
+
+.stories {
+    padding: 140px 0;
+    background-color: $deep-green;
+    position: relative;
+
+    &__cnt {
+        display: grid;
+        place-items: center;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 48px;
+        color: $white;
+        width: 932px;
+        text-align: center;
+    }
+
+    &__span {
+        color: $light-blue;
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 56px;
+    }
+
+    &__card {
+        width: 350px;
+        text-align: center;
+        background-image: url(../../images/storiescardbgi.svg);
+        background-repeat: no-repeat;
+        background-position: top center;
+
+        &__text {
+            color: $white;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 25px;
+        }
+
+        &__name {
+            margin-top: 24px;
+            margin-bottom: 32px;
+        }
+
+        &__username {
+            color: $light-blue;
+        }
+
+        &__job {
+            color: $white;
+        }
+    }
+
+    &__img {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    &__img2 {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .stories {
+
+        &__title {
+            font-size: 32px;
+            line-height: 32px;
+            width: 573px;
+        }
+
+        &__content {
+            flex-direction: column;
+            gap: 48px;
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .stories {
+
+        &__title {
+            font-size: 32px;
+            width: 327px;
+        }
+    }
+}
