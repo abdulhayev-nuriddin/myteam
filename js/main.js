@@ -2,28 +2,28 @@
 
 // -----------------------------------------------------------------------------
 
-// function hideLoader() {
-//   const loader = document.getElementById("loader");
-//   const contents = document.querySelectorAll(".hidden-content");
+function hideLoader() {
+  const loader = document.getElementById("loader");
+  const contents = document.querySelectorAll(".hidden-content");
 
-//   let isLoaded = false;
-//   let isMinimumTimePassed = false;
+  let isLoaded = false;
+  let isMinimumTimePassed = false;
 
-//   setTimeout(() => {
-//     isMinimumTimePassed = true;
-//     if (isLoaded) hideNow();
-//   }, 1500);
+  setTimeout(() => {
+    isMinimumTimePassed = true;
+    if (isLoaded) hideNow();
+  }, 1500);
 
-//   window.addEventListener("load", () => {
-//     isLoaded = true;
-//     if (isMinimumTimePassed) hideNow();
-//   });
+  window.addEventListener("load", () => {
+    isLoaded = true;
+    if (isMinimumTimePassed) hideNow();
+  });
 
-//   function hideNow() {
-//     loader.classList.add("hidden");
-//     contents.forEach((el) => el.classList.add("show"));
-//   }
-// }
+  function hideNow() {
+    loader.classList.add("hidden");
+    contents.forEach((el) => el.classList.add("show"));
+  }
+}
 
 // -----------------------------------------------------------------------------
 
@@ -125,7 +125,7 @@ function toggleHamburgerMenu() {
 // -----------------------------------------------------------------------------
 
 document.addEventListener("DOMContentLoaded", () => {
-  // hideLoader();
+  hideLoader();
   // toggleTheme();
   updateScrollProgressBar();
   toggleHamburgerMenu();
