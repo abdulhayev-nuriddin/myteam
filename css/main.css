@@ -712,4 +712,259 @@ img {
     flex-direction: column;
     gap: 24px;
   }
+}
+.about {
+  margin-top: 120px;
+  padding-top: 130px;
+  background-color: #014E56;
+  height: 85vh;
+  position: relative;
+}
+.about__cnt {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.about__title {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 100px;
+  color: #fff;
+}
+.about__right {
+  display: grid;
+  gap: 40px;
+  width: 730px;
+}
+.about__line {
+  width: 50px;
+  height: 4px;
+  background-color: #F67E7E;
+}
+.about__text {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #fff;
+}
+.about__img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.directors {
+  background-color: #004047;
+  color: #fff;
+  text-align: center;
+  padding: 140px 0;
+  position: relative;
+}
+.directors__title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+}
+.directors__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  margin-top: 64px;
+}
+.directors__card {
+  background-color: #012F34;
+  width: 350px;
+  height: 250px;
+  border-radius: 8px;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+.directors__card .directors__img {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 3px solid #C4FFFE;
+  margin-top: 20px;
+}
+.directors__card .directors__name {
+  margin: 15px 0 5px;
+  font-size: 1.2rem;
+}
+.directors__card .directors__role {
+  font-style: italic;
+  color: #fff;
+  font-size: 0.9rem;
+}
+.directors__card .directors__btn {
+  position: absolute;
+  bottom: -28px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 56px;
+  height: 56px;
+  background-color: #F67E7E;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  z-index: 3;
+}
+.directors__card .directors__btn.is__active {
+  background-color: #79C8C7;
+}
+.directors__card .directors__btn.is__active .directors__icon::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+  background-color: #012F34;
+}
+.directors__card .directors__btn.is__active .directors__icon::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+  background-color: #012F34;
+}
+.directors__card .directors__btn .directors__icon {
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+.directors__card .directors__btn .directors__icon::before, .directors__card .directors__btn .directors__icon::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 20px;
+  height: 3px;
+  background-color: #fff;
+  transition: transform 0.3s ease;
+  transform-origin: center;
+}
+.directors__card .directors__btn .directors__icon::before {
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+.directors__card .directors__btn .directors__icon::after {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+.directors__card .directors__extra {
+  position: absolute;
+  inset: 0;
+  background-color: #002529;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.3s ease;
+  pointer-events: none;
+}
+.directors__card .directors__extra__active {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: all;
+  border-radius: 8px;
+}
+.directors__card .directors__extra p {
+  margin: 15px 0;
+  color: #fff;
+}
+.directors__card .directors__extra .directors__icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+.directors__card .directors__extra .directors__icons i {
+  font-size: 1.3rem;
+  color: #79c8c7;
+  transition: color 0.3s ease;
+}
+.directors__card .directors__extra .directors__icons i:hover {
+  color: #f67e7e;
+}
+.directors__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.directors__image2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .about {
+    margin-top: 110px;
+    padding-top: 100px;
+    height: 100vh;
+  }
+  .about__cnt {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .about__title {
+    width: 397px;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 56px;
+    text-align: center;
+  }
+  .about__right {
+    width: 457px;
+  }
+  .about__text {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 28px;
+    text-align: center;
+  }
+  .about__line {
+    display: none;
+  }
+}
+.directors {
+  padding: 100px 0;
+}
+.directors__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 76px;
+}
+.directors__card {
+  width: 280px;
+}
+
+@media only screen and (max-width: 480px) {
+  .about {
+    margin-top: 90px;
+    height: 90vh;
+  }
+  .about__cnt {
+    gap: 18px;
+  }
+  .about__title {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .about__text {
+    font-size: 15px;
+    line-height: 28px;
+  }
+  .about__right {
+    width: 100%;
+  }
+}
+.directors {
+  padding: 100px 0;
+}
+.directors__title {
+  font-size: 32px;
+  line-height: 32px;
+}
+.directors__cards {
+  grid-template-columns: repeat(1, 1fr);
+  gap: 52px;
+}
+.directors__card {
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */

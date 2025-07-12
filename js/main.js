@@ -132,3 +132,42 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // -----------------------------------------------------------------------------
+document.querySelectorAll(".directors__card").forEach((card) => {
+  const btn = card.querySelector(".directors__btn");
+  const extra = card.querySelector(".directors__extra");
+
+  card.addEventListener("mouseenter", () => {
+    document
+      .querySelectorAll(".directors__extra")
+      .forEach((el) => el.classList.remove("directors__extra__active"));
+    document
+      .querySelectorAll(".directors__btn")
+      .forEach((el) => el.classList.remove("is__active"));
+
+    extra.classList.add("directors__extra__active");
+    btn.classList.add("is__active");
+  });
+
+  card.addEventListener("mouseleave", () => {
+    extra.classList.remove("directors__extra__active");
+    btn.classList.remove("is__active");
+  });
+
+  btn.addEventListener("click", (e) => {
+    e.stopPropagation();
+
+    const isActive = extra.classList.contains("directors__extra__active");
+
+    document
+      .querySelectorAll(".directors__extra")
+      .forEach((el) => el.classList.remove("directors__extra__active"));
+    document
+      .querySelectorAll(".directors__btn")
+      .forEach((el) => el.classList.remove("is__active"));
+
+    if (!isActive) {
+      extra.classList.add("directors__extra__active");
+      btn.classList.add("is__active");
+    }
+  });
+});
