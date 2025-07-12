@@ -920,20 +920,19 @@ img {
   .about__line {
     display: none;
   }
+  .directors {
+    padding: 100px 0;
+  }
+  .directors__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 76px;
+  }
+  .directors__card {
+    width: 280px;
+  }
 }
-.directors {
-  padding: 100px 0;
-}
-.directors__cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  row-gap: 76px;
-}
-.directors__card {
-  width: 280px;
-}
-
 @media only screen and (max-width: 480px) {
   .about {
     margin-top: 90px;
@@ -953,18 +952,18 @@ img {
   .about__right {
     width: 100%;
   }
-}
-.directors {
-  padding: 100px 0;
-}
-.directors__title {
-  font-size: 32px;
-  line-height: 32px;
-}
-.directors__cards {
-  grid-template-columns: repeat(1, 1fr);
-  gap: 52px;
-}
-.directors__card {
-  width: 100%;
+  .directors {
+    padding: 100px 0;
+  }
+  .directors__title {
+    font-size: 32px;
+    line-height: 32px;
+  }
+  .directors__cards {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 52px;
+  }
+  .directors__card {
+    width: 100%;
+  }
 }/*# sourceMappingURL=main.css.map */
