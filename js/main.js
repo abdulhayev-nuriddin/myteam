@@ -132,6 +132,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // -----------------------------------------------------------------------------
+
 document.querySelectorAll(".directors__card").forEach((card) => {
   const btn = card.querySelector(".directors__btn");
   const extra = card.querySelector(".directors__extra");
@@ -171,3 +172,46 @@ document.querySelectorAll(".directors__card").forEach((card) => {
     }
   });
 });
+
+// -----------------------------------------------------------------------------
+
+const form = document.querySelector(".contact__form");
+const inputs = document.querySelectorAll(".contact__input");
+
+inputs.forEach((input) => {
+  input.addEventListener("focus", () => {
+    input.classList.remove("contact__input__invalid");
+  });
+
+  input.addEventListener("blur", () => {
+    if (input.required && !input.value.trim()) {
+      input.classList.add("contact__input__invalid");
+    }
+  });
+
+  input.addEventListener("input", () => {
+    if (input.value.trim()) {
+      input.classList.remove("contact__input__invalid");
+    }
+  });
+});
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const firstInvalid = Array.from(inputs).find(
+    (input) => input.required && !input.value.trim()
+  );
+
+  if (firstInvalid) {
+    firstInvalid.focus();
+    firstInvalid.classList.add("contact__input__invalid");
+  } else {
+    inputs.forEach((input) => {
+      input.value = "";
+      input.classList.remove("contact__input__invalid");
+    });
+  }
+});
+
+// -----------------------------------------------------------------------------

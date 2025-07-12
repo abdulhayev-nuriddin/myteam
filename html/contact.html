@@ -48,9 +48,123 @@
         </div>
       </div>
     </header>
+
     <main class="main hidden-content">
-      <section class=""></section>
+      <section class="contact">
+        <img
+          src="../images/contactbgi.png"
+          alt="contact"
+          class="contact__img"
+        />
+        <img
+          src="../images/contactbgi2.png"
+          alt="contact"
+          class="contact__img2"
+        />
+        <div class="cnt contact__cnt">
+          <div class="contact__left">
+            <h1 class="contact__title">Contact</h1>
+            <h2 class="contact__subtitle">Ask us about</h2>
+            <ul class="contact__list">
+              <li class="contact__item">
+                <img
+                  src="../images/buildicon.svg"
+                  alt=""
+                  class="contact__icon"
+                />
+                <h4 class="contact__text">The quality of our talent network</h4>
+              </li>
+              <li class="contact__item">
+                <img
+                  src="../images/buildicon2.svg"
+                  alt=""
+                  class="contact__icon"
+                />
+                <h4 class="contact__text">
+                  Usage & implementation of our software
+                </h4>
+              </li>
+              <li class="contact__item">
+                <img
+                  src="../images/buildicon3.svg"
+                  alt=""
+                  class="contact__icon"
+                />
+                <h4 class="contact__text">How we help drive innovation</h4>
+              </li>
+            </ul>
+          </div>
+          <form
+            class="contact__form"
+            method="post"
+            action="echo.htmlacademy.ru/"
+            novalidate
+          >
+            <div class="contact__field">
+              <input
+                type="text"
+                name="name"
+                class="contact__input"
+                id="name"
+                placeholder=" "
+                required
+              />
+              <label class="contact__label" for="name">Your Name</label>
+              <span class="contact__error">This field is required</span>
+            </div>
+            <div class="contact__field">
+              <input
+                type="email"
+                name="email"
+                class="contact__input"
+                id="email"
+                placeholder=" "
+                required
+              />
+              <label class="contact__label" for="email">Email Address</label>
+              <span class="contact__error">This field is required</span>
+            </div>
+            <div class="contact__field">
+              <input
+                type="text"
+                name="company"
+                class="contact__input"
+                id="company"
+                placeholder=" "
+                required
+              />
+              <label class="contact__label" for="company">Company Name</label>
+              <span class="contact__error">This field is required</span>
+            </div>
+            <div class="contact__field">
+              <input
+                type="text"
+                name="title"
+                class="contact__input"
+                id="title"
+                placeholder=" "
+                required
+              />
+              <label class="contact__label" for="title">Title</label>
+              <span class="contact__error">This field is required</span>
+            </div>
+            <div class="contact__field">
+              <textarea
+                name="message"
+                class="contact__input contact__textarea"
+                id="message"
+                placeholder=" "
+                required
+              ></textarea>
+              <label class="contact__label" for="message">Message</label>
+              <span class="contact__error">This field is required</span>
+            </div>
+            <button type="submit" class="contact__btn">submit</button>
+          </form>
+        </div>
+      </section>
     </main>
+
     <footer class="footer hidden-content">
       <div class="cnt footer__cnt">
         <ul class="footer__list">
