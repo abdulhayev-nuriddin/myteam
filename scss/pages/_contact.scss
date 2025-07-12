@@ -127,12 +127,16 @@
         padding: 10px 32px;
         border-radius: 25px;
         font-weight: 600;
-        transition: background 0.3s;
+        transition: all 0.3s ease;
         border: 2px solid #fff;
 
         &:hover {
             background: none;
             color: #fff;
+        }
+
+        &:active {
+            transform: scale(0.95);
         }
     }
 

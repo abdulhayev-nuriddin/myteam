@@ -328,6 +328,7 @@ img {
 }
 .footer__links {
   opacity: 0.6;
+  display: inline-block;
 }
 .footer__list3 {
   display: grid;
@@ -827,12 +828,15 @@ img {
   padding: 10px 32px;
   border-radius: 25px;
   font-weight: 600;
-  transition: background 0.3s;
+  transition: all 0.3s ease;
   border: 2px solid #fff;
 }
 .contact__btn:hover {
   background: none;
   color: #fff;
+}
+.contact__btn:active {
+  transform: scale(0.95);
 }
 .contact__img {
   position: absolute;
