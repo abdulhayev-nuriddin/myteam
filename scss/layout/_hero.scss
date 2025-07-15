@@ -57,6 +57,49 @@
     }
 }
 
+@media only screen and (max-width: 1071px) {
+    .hero {
+
+        &__img {
+            display: none;
+        }
+    }
+}
+
+@media only screen and (max-width: 918px) {
+    .hero {
+        padding: 90px 0;
+
+        &__title {
+            width: auto;
+            font-size: 70px;
+        }
+    }
+}
+
+@media only screen and (max-width: 895px) {
+    .hero {
+
+        &__cnt {
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        &__line {
+            display: none;
+        }
+
+        &__text {
+            text-align: center;
+        }
+
+        &__img2 {
+            left: 0;
+        }
+    }
+}
+
+
 @media only screen and (max-width: 768px) {
     .hero {
         margin-top: 110px;

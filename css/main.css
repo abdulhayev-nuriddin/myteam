@@ -434,6 +434,35 @@ img {
   left: 60%;
 }
 
+@media only screen and (max-width: 1071px) {
+  .hero__img {
+    display: none;
+  }
+}
+@media only screen and (max-width: 918px) {
+  .hero {
+    padding: 90px 0;
+  }
+  .hero__title {
+    width: auto;
+    font-size: 70px;
+  }
+}
+@media only screen and (max-width: 895px) {
+  .hero__cnt {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .hero__line {
+    display: none;
+  }
+  .hero__text {
+    text-align: center;
+  }
+  .hero__img2 {
+    left: 0;
+  }
+}
 @media only screen and (max-width: 768px) {
   .hero {
     margin-top: 110px;
@@ -548,6 +577,19 @@ img {
   right: 0;
 }
 
+@media only screen and (max-width: 918px) {
+  .build__title {
+    width: auto;
+  }
+  .build__box {
+    display: grid;
+    place-items: center;
+    width: 500px;
+  }
+  .build__box__texts {
+    text-align: center;
+  }
+}
 @media only screen and (max-width: 768px) {
   .build {
     height: auto;
@@ -590,7 +632,6 @@ img {
 }
 .stories__cnt {
   display: grid;
-  place-items: center;
 }
 .stories__title {
   font-weight: 700;
@@ -643,6 +684,22 @@ img {
   right: 0;
 }
 
+@media only screen and (max-width: 1071px) {
+  .stories__card {
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 953px) {
+  .stories__title {
+    width: auto;
+  }
+  .stories__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    row-gap: 50px;
+  }
+}
 @media only screen and (max-width: 768px) {
   .stories__title {
     font-size: 32px;
@@ -654,10 +711,23 @@ img {
     gap: 48px;
   }
 }
+@media only screen and (max-width: 662px) {
+  .stories__title {
+    width: auto;
+  }
+  .stories__content {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 24px;
+  }
+}
 @media only screen and (max-width: 480px) {
   .stories__title {
     font-size: 32px;
     width: 327px;
+  }
+  .stories__content {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 24px;
   }
 }
 .ready {
@@ -700,6 +770,14 @@ img {
   left: 0;
 }
 
+@media only screen and (max-width: 918px) {
+  .ready__cnt {
+    width: 100%;
+  }
+  .ready__img {
+    display: none;
+  }
+}
 @media only screen and (max-width: 768px) {
   .ready__title {
     font-size: 32px;

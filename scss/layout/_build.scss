@@ -65,6 +65,24 @@
     }
 }
 
+@media only screen and (max-width: 918px) {
+    .build {
+        &__title {
+            width: auto;
+        }
+
+        &__box {
+            display: grid;
+            place-items: center;
+            width: 500px;
+
+            &__texts {
+                text-align: center;
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 768px) {
     .build {
         height: auto;

@@ -7,7 +7,7 @@
 
     &__cnt {
         display: grid;
-        place-items: center;
+        // place-items: center;
     }
 
     &__title {
@@ -71,6 +71,31 @@
     }
 }
 
+@media only screen and (max-width: 1071px) {
+    .stories {
+
+        &__card {
+            width: 300px;
+        }
+    }
+}
+
+@media only screen and (max-width: 953px) {
+    .stories {
+
+        &__title {
+            width: auto;
+        }
+
+        &__content {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            place-items: center;
+            row-gap: 50px;
+        }
+    }
+}
+
 @media only screen and (max-width: 768px) {
     .stories {
 
@@ -87,12 +112,31 @@
     }
 }
 
+@media only screen and (max-width: 662px) {
+    .stories {
+
+        &__title {
+            width: auto;
+        }
+
+        &__content {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 24px;
+        }
+    }
+}
+
 @media only screen and (max-width: 480px) {
     .stories {
 
         &__title {
             font-size: 32px;
             width: 327px;
+        }
+
+        &__content {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 24px;
         }
     }
 }
